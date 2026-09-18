@@ -1,0 +1,16 @@
+__pycache__/
+*egg-info/
+.ipynb_checkpoints/
+.vs/
+bin/
+build/
+lib/
+*.user
+*.pyd
+*.dll
+*.so
+*.pdb
+*.whl
+.vscode/
+archive/
+latex/
