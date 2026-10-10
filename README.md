@@ -18,8 +18,11 @@ qflib/            C++ library
 pyqflib/          Python extension module and the qflib package
 quanto.py         numbers and figures of the report
 report.pdf
+slides.pdf
 CMakeLists.txt
 ```
+
+The report and slides are distributed as compiled PDFs. Their typesetting source is not included.
 
 ## Requirements
 
