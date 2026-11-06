@@ -1,6 +1,6 @@
 # Multi-Asset Quanto Pricing via C++ and Python Interface
 
-This report documents qflib, a C++ library with a Python interface. It includes pricing European quanto options by three methods (a closed-form formula, Monte Carlo simulation and a finite-difference PDE) and pricing quanto basket calls and quanto worst-of digitals by Monte Carlo.
+This report extends qflib, a C++ library with a Python interface, to quanto options, and examines how the asset-FX and asset-asset correlations affect their prices. European quanto options are priced by three methods (a closed-form formula, Monte Carlo simulation and a finite-difference PDE scheme), and quanto basket calls and quanto worst-of digitals by Monte Carlo.
 
 | Python function | Method | Pricer | Payoff |
 |---|---|---|---|
@@ -58,8 +58,8 @@ pip install ./pyqflib
 python quanto.py
 ```
 
-The build writes the extension module into `pyqflib/qflib/`, and `pip install` copies it into the environment, so rerun `pip install` after every rebuild. `quanto.py` then prints the numbers quoted in the report and writes its seven figures to `latex/figures/`, which is created on first run and is not tracked.
+The build writes the extension module into `pyqflib/qflib/`, and `pip install` copies it into the environment, so rerun `pip install` after every rebuild. `quanto.py` then prints the numbers quoted in the report and draws its seven figures.
 
-### Credits
+## Credits
 
 qflib 1.0.0 teaching library was written by Michael G. Sotiropoulos for QFGB 8960 Advanced C++ for Finance. 
